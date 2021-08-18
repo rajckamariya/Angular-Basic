@@ -4,5 +4,4 @@
 <p>{{serverName}}</p>
 <button (click)="createServer()" [disabled]="!allowNewServer" class="btn btn-primary">Add Server</button>
 <p>{{isServerCreated}}</p>
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>
